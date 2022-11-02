@@ -169,20 +169,81 @@
 // console.log(findNumber(6, 9, 4))
 // console.log(findNumber(16, 35, 7))
 
-function includes(array, value) {
+// function includes(array, value) {
+//   // Change code below this line
+//   // let items = array
+//   for (let item of array) {
+//     if (item === value) { 
+//       return true  
+//     }
+//   }
+//   return false
+//   // Change code above this line
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3))
+// console.log(includes([1, 2, 3, 4, 5], 17))
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"))
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"))
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum"))
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"))
+
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// // Change code below this line
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[apartment.tags.length -1];
+// // Change code above this line
+// console.log(ownerName, ownerPhone, ownerEmail, numberOfTags, firstTag, lastTag )
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// // Change code below this line
+// apartment.area = 60;
+// apartment.rooms = 3;
+// apartment.location = {country: "Jamaica", city: "Kingston"};
+// console.log(apartment)
+
+const name = "Repair Droid";
+const price = 2500;
+const image = "https://via.placeholder.com/640x480";
+const tags = ["on sale", "trending", "best buy"];
+
+const product = {
   // Change code below this line
-  // let items = array
-  for (let item of array) {
-    if (item === value) { 
-      return true  
-    }
-  }
-  return false
+  name,
+  price,
+  image,
+  tags,
   // Change code above this line
-}
-console.log(includes([1, 2, 3, 4, 5], 3))
-console.log(includes([1, 2, 3, 4, 5], 17))
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"))
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"))
-console.log(includes(["apple", "plum", "pear", "orange"], "plum"))
-console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"))
+};
+console.log(product.name)
+console.log(product.price)
+console.log(product.image)
+console.log(product.tags)
