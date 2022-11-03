@@ -230,20 +230,177 @@
 // apartment.location = {country: "Jamaica", city: "Kingston"};
 // console.log(apartment)
 
-const name = "Repair Droid";
-const price = 2500;
-const image = "https://via.placeholder.com/640x480";
-const tags = ["on sale", "trending", "best buy"];
+// const name = "Repair Droid";
+// const price = 2500;
+// const image = "https://via.placeholder.com/640x480";
+// const tags = ["on sale", "trending", "best buy"];
 
-const product = {
+// const product = {
+//   // Change code below this line
+//   name,
+//   price,
+//   image,
+//   tags,
+//   // Change code above this line
+// };
+// console.log(product.name)
+// console.log(product.price)
+// console.log(product.image)
+// console.log(product.tags)
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for (let key in apartment) {
+//   keys.push(key)
+//   values.push(apartment[key]);
+// }
+
+// console.log(keys, values)
+
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+//   if (apartment.hasOwnProperty(key)) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+//   // Change code above this line
+// }
+// console.log(apartment)
+
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Если это собственное свойство - выполняем тело if
+//   if (book.hasOwnProperty(key)) {
+//     console.log(key);
+//     console.log(book[key]);
+//   }
+
+//   // Если это не собственное свойство - ничего не делаем
+// }
+
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+//   let newProps = []
+//   for ( const key in object) {
+//       if (object.hasOwnProperty(key)) {
+//       newProps.push(key);
+//     }
+//     }
+//   propCount += newProps.length
+  
+//   // Change code above this line
+//   return propCount;
+// }
+// console.log(countProps({ name: "Mango", age: 2 }))
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
+
+// const book = {
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+
+// for (const key of keys) {
+//   // Ключ
+//   console.log(key);
+//   // Значение свойства
+//   console.log(book[key]);
+// }
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// console.log(keys)
+// for (let key of keys) {
+//   console.log(key)
+//   console.log(apartment[key])
+//   values.push(apartment[key])
+// }
+// console.log(values)
+
+
+// function countProps(object) {
   // Change code below this line
-  name,
-  price,
-  image,
-  tags,
+  // for (const key in object) {
+  //   if (object.hasOwnProperty(key)) {
+  //     propCount += 1;
+  //   }
+  // }
+
+  // return propCount;
   // Change code above this line
-};
-console.log(product.name)
-console.log(product.price)
-console.log(product.image)
-console.log(product.tags)
+
+//   let propCount = 0;
+
+//   const keys = Object.keys(object)
+//   propCount += keys.length
+//   return propCount
+// }
+// console.log(countProps({ name: "Mango", age: 2 }))
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
+
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//     const employersSalary = Object.values(salaries)
+//     console.log(employersSalary)
+//     for (let item of employersSalary) {
+//       console.log(item)
+//       totalSalary += item
+//     }
+    
+//   // Change code above this line
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }))
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }))
+
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
+
+const hexColors = [];
+const rgbColors = [];
+// Change code below this line
+for (let color of colors) {
+ console.log(color) 
+ hexColors.push(color.hex)
+ rgbColors.push(color.rgb)
+}
+
+console.log(hexColors)
+console.log(rgbColors)
